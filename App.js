@@ -8,7 +8,7 @@ import {
   StatusBar,
 } from 'react-native';
 import { colors } from './src/utils/colors';
-import { Focus } from './src/feautures/Focus'
+import { Focus } from './src/feautures/Focus';
 import { Timer } from './src/feautures/Timer';
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
         <Timer 
           focusSubject={currentSubject}
           onTimerEnd={() => {}}
-          clearSubject={() => {}}
+          clearSubject={() => setCurrentSubject(null)}
         />
       )}
     </SafeAreaView>
